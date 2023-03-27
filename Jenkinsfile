@@ -16,7 +16,7 @@ pipeline {
                     sh """#!/bin/bash
                         echo "preparing workspace"
                         gcloud auth activate-service-account --key-file /tmp/gcp-key.json
-                        gcloud builds submit --project cicd-381915 --config cloudbuild.yaml .
+                        gcloud builds submit --project cicd-381915 --config ./app/cloudbuild.yaml .
                     """
                 }
             }
