@@ -1,3 +1,4 @@
 app/node_modules
 
 jenkins/gcp-key.json
+jenkins/.DS_Store
