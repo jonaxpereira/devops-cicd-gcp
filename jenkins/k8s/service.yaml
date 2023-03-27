@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: jenkins-entrevista
+  name: jenkins
 spec:
   type: ClusterIP
   selector:
-    app: jenkins-entrevista
+    app: jenkins
   ports:
   - port: 80
     targetPort: 8080

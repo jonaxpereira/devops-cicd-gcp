@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/projectid/app:1.0.0', '.']
+  args: ['build', '-t', 'gcr.io/cicd-381915/app:1.0.0', '.']
 
-images: [gcr.io/projectid/app:1.0.0]
+images: [gcr.io/cicd-381915/app:1.0.0]
