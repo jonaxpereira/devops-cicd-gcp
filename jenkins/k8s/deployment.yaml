@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-entrevista
+spec:
+  selector:
+    matchLabels:
+      app: jenkins-entrevista
+  template:
+    metadata:
+      labels:
+        app: jenkins-entrevista
+    spec:
+      containers:
+      - name: jenkins-entrevista
+        image: gcr.io/entrevista-381712/jenkins-entrevista:1.0.0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
+        env:
+          - name: JENKINS_OPTS
+            value: "--prefix=/jenkins"
