@@ -1,13 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Prepare_Workspace') {
-            steps {
-                script {
-                    
-                }
-            }
-        }
         stage('Test') {
             steps {
                 script {
